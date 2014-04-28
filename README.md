@@ -7,7 +7,7 @@ gitlab-jira-webhook
 -----------------------------------  
 ###1.安装nodejs
 ###2.git clone https://github.com/yzjia/gitlab-jira-webhook.git
-###3.cd gitlab-jira-webhook && node ./bin/www
+###3.cd gitlab-jira-webhook && npm install && node ./bin/www
 ###4.在gitlab中新建项目后，选择该project->setting->Web Hooks->url中填写http://yourdomain.com/hooks
 ###5.提交git代码到本地时填写“refs #PMSYS-9”，多个关联用空格分隔。例如：git commit -m"refs #PMSYS-9 refs #PMSYS-16 some message"
 ###6.git push提交代码到gitlab，gitlab自动调用webhook，为相应issue新增备注
